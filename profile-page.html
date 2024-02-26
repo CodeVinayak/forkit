@@ -310,6 +310,49 @@
         .about-content {
             color: #333;
         }
+        /* Add this CSS to your existing styles */
+
+.friends-list {
+    width: 30%;
+    margin-left: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.friends-title {
+    font-size: 1.5em;
+    color: #512da8;
+    margin-bottom: 10px;
+}
+
+.friend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.friend img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.friend-info {
+    flex-grow: 1;
+}
+
+.friend-info p {
+    margin: 0;
+}
 
     </style>
 </head>
@@ -377,6 +420,8 @@
 
 
         </div>
+        <!-- ... (your existing code) ... -->
+
         <div class="main-container-30">
 
             <div class="notifications">
@@ -388,7 +433,50 @@
                 </div>
             </div>
 
+            <!-- Friends List Section -->
+            <div class="friends-list">
+                <div class="friends-title">Friends List</div>
+                <div class="friend">
+                    <img src="https://placekitten.com/50/50" alt="Friend 1">
+                    <div class="friend-info">
+                        <p>Name: Friend 1</p>
+                        <p>Some other content about Friend 1</p>
+                    </div>
+                </div>
+                <div class="friend">
+                    <img src="https://placekitten.com/51/51" alt="Friend 2">
+                    <div class="friend-info">
+                        <p>Name: Friend 2</p>
+                        <p>Some other content about Friend 2</p>
+                    </div>
+                </div>
+                <div class="friend">
+                    <img src="https://placekitten.com/52/52" alt="Friend 3">
+                    <div class="friend-info">
+                        <p>Name: Friend 3</p>
+                        <p>Some other content about Friend 3</p>
+                    </div>
+                </div>
+                <div class="friend">
+                    <img src="https://placekitten.com/53/53" alt="Friend 4">
+                    <div class="friend-info">
+                        <p>Name: Friend 4</p>
+                        <p>Some other content about Friend 4</p>
+                    </div>
+                </div>
+                <div class="friend">
+                    <img src="https://placekitten.com/54/54" alt="Friend 5">
+                    <div class="friend-info">
+                        <p>Name: Friend 5</p>
+                        <p>Some other content about Friend 5</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+        <!-- ... (your existing code) ... -->
+
     </div>
 
 
