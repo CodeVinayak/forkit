@@ -39,18 +39,27 @@
             font-size: 1.5em;
         }
 
+        /* Profile section */
         .profile {
             display: flex;
             align-items: center;
         }
 
-        .profile img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-right: 10px;
+        .profile button {
+            background-color: #f44336;
+            /* Red color for the logout button */
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
+
+        .profile button:hover {
+            background-color: #d32f2f;
+        }
+
 
         .dropdown {
             position: absolute;
@@ -195,16 +204,19 @@
         }
 
         .add-skill button {
-    background-color: #512da8;
-    color: #fff;
-    border: none;
-    width: 100px; /* Adjusted width for a circle */
-    height: 100px; /* Adjusted height for a circle */
-    border-radius: 50%; /* Make it a circle */
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+            background-color: #512da8;
+            color: #fff;
+            border: none;
+            width: 100px;
+            /* Adjusted width for a circle */
+            height: 100px;
+            /* Adjusted height for a circle */
+            border-radius: 50%;
+            /* Make it a circle */
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
         .add-skill button:hover {
             background-color: #470e68;
@@ -280,9 +292,6 @@
             <h1>ForkIt</h1>
         </div>
         <div class="profile">
-            <img src="https://placekitten.com/100/100" alt="User Profile">
-            <div class="dropdown">
-                <button>Profile</button>
                 <button>Logout</button>
             </div>
         </div>
