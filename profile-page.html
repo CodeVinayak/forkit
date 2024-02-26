@@ -492,10 +492,6 @@
         }
 
 
-        .glow-on-dark {
-            background-color: #470e68 !important;
-            color: #fff !important;
-        }
     </style>
 </head>
 
@@ -717,29 +713,6 @@
                 // Show "Request Received" tab by default
                 showTab('received-tab');
             </script>
-
-            <script>
-                function showTab(tabId) {
-                    // ... (existing code)
-
-                    // Show the selected tab content
-                    var selectedTab = document.getElementById(tabId);
-                    if (selectedTab) {
-                        selectedTab.style.display = 'block';
-                    }
-                }
-
-                function setButtonGlow(buttonId, glowOnDark) {
-                    var button = document.getElementById(buttonId);
-
-                    if (glowOnDark) {
-                        button.classList.add('glow-on-dark');
-                    } else {
-                        button.classList.remove('glow-on-dark');
-                    }
-                }
-            </script>
-
 
 
 
