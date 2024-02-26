@@ -224,6 +224,10 @@
             padding: 20px;
             margin-top: 20px;
             flex-shrink: 0; /* Prevent messages from shrinking */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
         }
 
         .message-title {
@@ -234,6 +238,7 @@
 
         .message-content {
             color: #333;
+            margin-left: 10px; /* Added margin for better alignment */
         }
     </style>
 </head>
