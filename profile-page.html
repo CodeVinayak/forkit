@@ -310,50 +310,59 @@
         .about-content {
             color: #333;
         }
+
         /* Add this CSS to your existing styles */
 
-.friends-list {
-    width: 85%;
-    margin-left: 30px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-top: 20px;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
+        .friends-list {
+            width: 85%;
+            margin-left: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
 
-.friends-title {
-    font-size: 1.5em;
-    color: #512da8;
-    margin-bottom: 10px;
-}
+        .friends-title {
+            font-size: 1.5em;
+            color: #512da8;
+            margin-bottom: 10px;
+        }
 
-.friend {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
+        .friend {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
 
-.friend img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
+        .friend img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
 
-.friend-info {
-    flex-grow: 1;
-}
+        .friend-info {
+            flex-grow: 1;
+        }
 
-.friend-info p {
-    margin: 0;
-}
+        .friend-info p {
+            margin: 0;
+        }
 
+        .verified-icon {
+            width: 20px;
+            /* Adjust the width as needed */
+            height: 20px;
+            /* Adjust the height as needed */
+            margin-left: 5px;
+            /* Adjust the margin as needed */
+        }
     </style>
 </head>
 
@@ -390,19 +399,20 @@
                 <div class="skill-stories">
                     <div class="story">
                         <img src="https://placekitten.com/100/100" alt="Skill Story 1">
-                        <p>Skill 1</p>
+                        <p>React</p>
+                        <img class="verified-icon" src="verified.png" alt="Verified">
                     </div>
                     <div class="story">
                         <img src="https://placekitten.com/100/100" alt="Skill Story 2">
-                        <p>Skill 2</p>
+                        <p>Node.js</p>
                     </div>
                     <div class="story">
                         <img src="https://placekitten.com/100/100" alt="Skill Story 3">
-                        <p>Skill 3</p>
+                        <p>MongoDB</p>
                     </div>
                     <div class="story">
                         <img src="https://placekitten.com/100/100" alt="Skill Story 4">
-                        <p>Skill 4</p>
+                        <p>Solidity</p>
                     </div>
                     <div class="add-skill">
                         <button>+</button>
