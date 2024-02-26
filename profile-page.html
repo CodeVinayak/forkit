@@ -469,6 +469,25 @@
     color: #512da8;
     margin-bottom: 10px;
 }
+.accept-button,
+.decline-button {
+    background-color: #512da8;
+    color: #fff;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 5px; 
+    display: inline-block; 
+}
+
+.accept-button:hover,
+.decline-button:hover {
+    background-color: #470e68;
+    color: #fff;
+}
+
 
     </style>
 </head>
@@ -683,7 +702,11 @@
                         selectedTab.style.display = 'block';
                     }
                 }
+            
+                // Show "Request Received" tab by default
+                showTab('received-tab');
             </script>
+            
             
 
 
