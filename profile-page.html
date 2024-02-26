@@ -491,7 +491,33 @@
             color: #fff;
         }
 
+        .withdraw-button {
+            margin-left: 20px;
+            background-color: #512da8;
+            color: #fff;
+            border: none;
+            padding: 8px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-right: 5px;
+            display: inline-block;
+        }
 
+        .withdraw-button:hover {
+            background-color: #470e68;
+            color: #fff;
+        }
+        .request-tab.active {
+    background-color: #512da8;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.request-tab.active:hover {
+    background-color: #470e68;
+    color: #fff;
+}
     </style>
 </head>
 
@@ -687,32 +713,41 @@
                                 <b>
                                     <p>Neha Singh</p>
                                 </b>
-                                <p>You sent a friend request.</p>
+                                <p>You sent friend request</p>
                             </div>
                         </div>
-                        <div class="request-status">Withdraw</div>
+                        <div class="withdraw-button">Withdraw</div>
                     </div>
                     <!-- Add more sent requests as needed -->
                 </div>
             </div>
-            <script>
-                function showTab(tabId) {
-                    // Hide all tab contents
-                    var tabContents = document.getElementsByClassName('request-tab-content');
-                    for (var i = 0; i < tabContents.length; i++) {
-                        tabContents[i].style.display = 'none';
-                    }
+      <!-- Add this to your existing JavaScript code -->
+<script>
+    function showTab(tabId) {
+        // Hide all tab contents
+        var tabContents = document.getElementsByClassName('request-tab-content');
+        for (var i = 0; i < tabContents.length; i++) {
+            tabContents[i].style.display = 'none';
+        }
 
-                    // Show the selected tab content
-                    var selectedTab = document.getElementById(tabId);
-                    if (selectedTab) {
-                        selectedTab.style.display = 'block';
-                    }
-                }
+        // Remove "active" class from all tabs
+        var tabs = document.getElementsByClassName('request-tab');
+        for (var i = 0; i < tabs.length; i++) {
+            tabs[i].classList.remove('active');
+        }
 
-                // Show "Request Received" tab by default
-                showTab('received-tab');
-            </script>
+        // Show the selected tab content
+        var selectedTab = document.getElementById(tabId);
+        if (selectedTab) {
+            selectedTab.style.display = 'block';
+            // Add "active" class to the selected tab
+            selectedTab.classList.add('active');
+        }
+    }
+
+    // Show "Request Received" tab by default
+    showTab('received-tab');
+</script>
 
 
 
