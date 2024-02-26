@@ -396,102 +396,106 @@
         }
 
         .friend-requests {
-    width: 85%;
-    margin-left: 30px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-top: 20px;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 20px;
-}
+            width: 85%;
+            margin-left: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
 
-.requests-title {
-    font-size: 1.5em;
-    color: #512da8;
-    margin-bottom: 10px;
-}
+        .requests-title {
+            font-size: 1.5em;
+            color: #512da8;
+            margin-bottom: 10px;
+        }
 
-.request {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-}
+        .request {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
 
-.request-info {
-    display: flex;
-    align-items: center;
-}
+        .request-info {
+            display: flex;
+            align-items: center;
+        }
 
-.request-info .profile-pic {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
+        .request-info .profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
 
-.friend-info {
-    flex-grow: 1;
-}
+        .friend-info {
+            flex-grow: 1;
+        }
 
-.friend-info p {
-    margin: 0;
-}
-.request-tabs {
-    display: flex;
-    margin-bottom: 15px;
-}
+        .friend-info p {
+            margin: 0;
+        }
 
-.request-tab {
-    padding: 10px;
-    margin-right: 10px;
-    cursor: pointer;
-    background-color: #eee;
-    border-radius: 5px;
-}
+        .request-tabs {
+            display: flex;
+            margin-bottom: 15px;
+        }
 
-.request-tab:hover {
-    background-color: #ddd;
-}
+        .request-tab {
+            padding: 10px;
+            margin-right: 10px;
+            cursor: pointer;
+            background-color: #eee;
+            border-radius: 5px;
+        }
 
-.request-tab-content {
-    display: none;
-}
+        .request-tab:hover {
+            background-color: #ddd;
+        }
 
-.requests-title {
-    font-size: 1.5em;
-    color: #512da8;
-    margin-bottom: 10px;
-}
-.accept-button,
-.decline-button {
-    margin-left: 2px;
-    background-color: #512da8;
-    color: #fff;
-    border: none;
-    padding: 8px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-right: 5px; 
-    display: inline-block; 
-}
+        .request-tab-content {
+            display: none;
+        }
 
-.accept-button:hover,
-.decline-button:hover {
-    background-color: #470e68;
-    color: #fff;
-}
+        .requests-title {
+            font-size: 1.5em;
+            color: #512da8;
+            margin-bottom: 10px;
+        }
+
+        .accept-button,
+        .decline-button {
+            margin-left: 2px;
+            background-color: #512da8;
+            color: #fff;
+            border: none;
+            padding: 8px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-right: 5px;
+            display: inline-block;
+        }
+
+        .accept-button:hover,
+        .decline-button:hover {
+            background-color: #470e68;
+            color: #fff;
+        }
 
 
-
-
+        .glow-on-dark {
+            background-color: #470e68 !important;
+            color: #fff !important;
+        }
     </style>
 </head>
 
@@ -616,7 +620,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="notifications-section">
                 <div class="notification">
                     <div class="notification-title">Notifications</div>
@@ -657,14 +661,16 @@
                     <div class="request-tab" onclick="showTab('received-tab')">Request Received</div>
                     <div class="request-tab" onclick="showTab('sent-tab')">Request Sent</div>
                 </div>
-            
+
                 <div id="received-tab" class="request-tab-content">
                     <!-- Request Received Content -->
                     <div class="request">
                         <div class="request-info">
                             <img class="profile-pic" src="https://placekitten.com/56/56">
                             <div class="friend-info">
-                                <b><p>Amit</p></b>
+                                <b>
+                                    <p>Amit</p>
+                                </b>
                                 <p>Sent you friend request</p>
                             </div>
                         </div>
@@ -675,14 +681,16 @@
                     </div>
                     <!-- Add more received requests as needed -->
                 </div>
-            
+
                 <div id="sent-tab" class="request-tab-content">
                     <!-- Request Sent Content -->
                     <div class="request">
                         <div class="request-info">
                             <img class="profile-pic" src="https://placekitten.com/57/57">
                             <div class="friend-info">
-                                <b><p>Neha Singh</p></b>
+                                <b>
+                                    <p>Neha Singh</p>
+                                </b>
                                 <p>You sent a friend request.</p>
                             </div>
                         </div>
@@ -698,19 +706,41 @@
                     for (var i = 0; i < tabContents.length; i++) {
                         tabContents[i].style.display = 'none';
                     }
-            
+
                     // Show the selected tab content
                     var selectedTab = document.getElementById(tabId);
                     if (selectedTab) {
                         selectedTab.style.display = 'block';
                     }
                 }
-            
+
                 // Show "Request Received" tab by default
                 showTab('received-tab');
             </script>
-            
-            
+
+            <script>
+                function showTab(tabId) {
+                    // ... (existing code)
+
+                    // Show the selected tab content
+                    var selectedTab = document.getElementById(tabId);
+                    if (selectedTab) {
+                        selectedTab.style.display = 'block';
+                    }
+                }
+
+                function setButtonGlow(buttonId, glowOnDark) {
+                    var button = document.getElementById(buttonId);
+
+                    if (glowOnDark) {
+                        button.classList.add('glow-on-dark');
+                    } else {
+                        button.classList.remove('glow-on-dark');
+                    }
+                }
+            </script>
+
+
 
 
 
