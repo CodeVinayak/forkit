@@ -195,15 +195,16 @@
         }
 
         .add-skill button {
-            background-color: #512da8;
-            color: #fff;
-            border: none;
-            width: 100px;
-            padding: 8px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+    background-color: #512da8;
+    color: #fff;
+    border: none;
+    width: 100px; /* Adjusted width for a circle */
+    height: 100px; /* Adjusted height for a circle */
+    border-radius: 50%; /* Make it a circle */
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
         .add-skill button:hover {
             background-color: #470e68;
@@ -320,6 +321,7 @@
             </div>
             <div class="add-skill">
                 <button>+</button>
+                <p>Add Skill</p>
             </div>
         </div>
     </div>
