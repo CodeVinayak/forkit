@@ -443,31 +443,35 @@
 .friend-info p {
     margin: 0;
 }
-
-.request-buttons {
+.request-tabs {
     display: flex;
+    margin-bottom: 15px;
 }
 
-.request-buttons button {
-    background-color: #512da8;
-    color: #fff;
-    border: none;
-    padding: 8px 10px;
-    border-radius: 5px;
+.request-tab {
+    padding: 10px;
+    margin-right: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-right: 5px;
+    background-color: #eee;
+    border-radius: 5px;
 }
 
-.request-buttons button:hover {
-    background-color: #470e68;
-    color: #fff;
+.request-tab:hover {
+    background-color: #ddd;
 }
 
-.request-status {
+.request-tab-content {
+    display: none;
+}
+
+.requests-title {
+    font-size: 1.5em;
     color: #512da8;
-    font-weight: bold;
+    margin-bottom: 10px;
 }
+
+/* Add the rest of the CSS as provided in the previous response */
+
 
     </style>
 </head>
@@ -628,33 +632,44 @@
             </div>
 
             <div class="friend-requests">
-                <div class="requests-title">Friend Requests</div>
-            
-                <!-- Request Received -->
-                <div class="request">
-                    <div class="request-info">
-                        <img class="profile-pic" src="https://placekitten.com/56/56">
-                        <div class="friend-info">
-                            <b><p>Amit</p></b>
-                            <p>Sent you a friend request.</p>
-                        </div>
-                    </div>
-                    <div class="request-buttons">
-                        <button class="accept-button">Accept</button>
-                        <button class="decline-button">Decline</button>
-                    </div>
+                <div class="request-tabs">
+                    <div class="request-tab" onclick="showTab('received-tab')">Request Received</div>
+                    <div class="request-tab" onclick="showTab('sent-tab')">Request Sent</div>
                 </div>
             
-                <!-- Request Sent -->
-                <div class="request">
-                    <div class="request-info">
-                        <img class="profile-pic" src="https://placekitten.com/57/57">
-                        <div class="friend-info">
-                            <b><p>Neha Singh</p></b>
-                            <p>You sent a friend request.</p>
+                <div id="received-tab" class="request-tab-content">
+                    <div class="requests-title">Received Requests</div>
+                    <!-- Request Received Content -->
+                    <div class="request">
+                        <div class="request-info">
+                            <img class="profile-pic" src="https://placekitten.com/56/56">
+                            <div class="friend-info">
+                                <b><p>Amit</p></b>
+                                <p>Sent you a friend request.</p>
+                            </div>
+                        </div>
+                        <div class="request-buttons">
+                            <button class="accept-button">Accept</button>
+                            <button class="decline-button">Decline</button>
                         </div>
                     </div>
-                    <div class="request-status">Pending</div>
+                    <!-- Add more received requests as needed -->
+                </div>
+            
+                <div id="sent-tab" class="request-tab-content">
+                    <div class="requests-title">Sent Requests</div>
+                    <!-- Request Sent Content -->
+                    <div class="request">
+                        <div class="request-info">
+                            <img class="profile-pic" src="https://placekitten.com/57/57">
+                            <div class="friend-info">
+                                <b><p>Neha Singh</p></b>
+                                <p>You sent a friend request.</p>
+                            </div>
+                        </div>
+                        <div class="request-status">Pending</div>
+                    </div>
+                    <!-- Add more sent requests as needed -->
                 </div>
             </div>
             
