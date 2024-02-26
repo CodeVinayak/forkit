@@ -161,6 +161,7 @@
             color: #fff;
         }
 
+        /* User Skills and Stories */
         .user-skills {
             margin-top: 20px;
             margin-left: 10px;
@@ -171,17 +172,44 @@
             width: 70%;
         }
 
-        .skill-badge-title {
-            font-size: 1.2em;
-            color: #512da8;
-            margin-bottom: 10px;
-        }
-
         .skill-stories {
             display: flex;
             justify-content: space-between;
             margin-top: 20px;
         }
+
+        .story {
+            width: 30%;
+            text-align: center;
+        }
+
+        .story img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .add-skill {
+            width: 30%;
+            text-align: center;
+        }
+
+        .add-skill button {
+            background-color: #512da8;
+            color: #fff;
+            border: none;
+            width: 100px;
+            padding: 8px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-skill button:hover {
+            background-color: #470e68;
+            color: #fff;
+        }
+
 
         .story {
             width: 30%;
@@ -270,7 +298,6 @@
         </div>
     </div>
 
-
     <!-- User Skills and Stories -->
     <div class="user-skills">
         <div class="skill-badge-title">Skill Badges</div>
@@ -286,6 +313,9 @@
             <div class="story">
                 <img src="https://placekitten.com/100/100" alt="Skill Story 3">
                 <p>Skill 3</p>
+            </div>
+            <div class="add-skill">
+                <button>+</button>
             </div>
         </div>
     </div>
