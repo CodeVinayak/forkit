@@ -111,10 +111,9 @@
             display: none;
         }
 
-        /* Removed search bar and added user details directly in container */
         .user-details {
             display: flex;
-            max-width: 70%;
+            width: 70%;
             align-items: center;
             margin-top: 20px;
             margin-left: 10px;
@@ -134,23 +133,22 @@
 
         .user-info {
             flex-grow: 1;
+            display: flex;
+            align-items: center;
         }
 
         .user-name {
             font-weight: bold;
-            margin-bottom: 5px;
-            max-width: fit-content;
+            margin-right: 20px;
+            /* Added margin to create space between username and buttons */
         }
 
         .edit-profile,
         .connect-option {
-            width: 100px;
-            margin: 10px;
             background-color: #512da8;
             color: #fff;
             border: none;
             padding: 8px 10px;
-            /* Adjusted padding for both buttons */
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
@@ -224,7 +222,8 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             padding: 20px;
             margin-top: 20px;
-            flex-shrink: 0; /* Prevent messages from shrinking */
+            flex-shrink: 0;
+            /* Prevent messages from shrinking */
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -239,7 +238,8 @@
 
         .message-content {
             color: #333;
-            margin-left: 10px; /* Added margin for better alignment */
+            margin-left: 10px;
+            /* Added margin for better alignment */
         }
     </style>
 </head>
@@ -259,18 +259,16 @@
         </div>
     </div>
 
-<!-- User Details -->
-<div class="user-details">
-    <img src="https://placekitten.com/100/100" alt="User Profile Photo">
-    <div class="user-info">
-        <div class="user-name">Username
-            <button class="edit-profile">Edit Profile</button>
-            <button class="connect-option">Connect</button>
+    <!-- User Details -->
+    <div class="user-details">
+        <img src="https://placekitten.com/100/100" alt="User Profile Photo">
+        <div class="user-info">
+            <div class="user-name">Username
+                <button class="edit-profile">Edit Profile</button>
+                <button class="connect-option">Connect</button>
+            </div>
         </div>
     </div>
-</div>
-
-
 
 
     <!-- User Skills and Stories -->
