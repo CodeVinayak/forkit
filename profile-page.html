@@ -114,7 +114,7 @@
         /* Removed search bar and added user details directly in container */
         .user-details {
             display: flex;
-            width: 70%;
+            max-width: 70%;
             align-items: center;
             margin-top: 20px;
             margin-left: 10px;
@@ -139,6 +139,7 @@
         .user-name {
             font-weight: bold;
             margin-bottom: 5px;
+            max-width: fit-content;
         }
 
         .edit-profile,
@@ -262,11 +263,13 @@
 <div class="user-details">
     <img src="https://placekitten.com/100/100" alt="User Profile Photo">
     <div class="user-info">
-        <div class="user-name">Username</div>
-        <button class="edit-profile">Edit Profile</button>
-        <button class="connect-option">Connect</button>
+        <div class="user-name">Username
+            <button class="edit-profile">Edit Profile</button>
+            <button class="connect-option">Connect</button>
+        </div>
     </div>
 </div>
+
 
 
 
