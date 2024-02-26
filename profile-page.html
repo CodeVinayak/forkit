@@ -356,12 +356,14 @@
         }
 
         .verified-icon {
-            width: 20px;
+            width: 5px;
             /* Adjust the width as needed */
-            height: 20px;
+            height: 5px;
             /* Adjust the height as needed */
             margin-left: 5px;
             /* Adjust the margin as needed */
+            display: inline-block;
+            /* Display on the same line */
         }
     </style>
 </head>
@@ -397,11 +399,14 @@
             <div class="user-skills">
                 <div class="skill-badge-title">Skill Badges</div>
                 <div class="skill-stories">
+                    <!-- Inside the skill-stories div -->
                     <div class="story">
                         <img src="https://placekitten.com/100/100" alt="Skill Story 1">
                         <p>React</p>
                         <img class="verified-icon" src="verified.png" alt="Verified">
                     </div>
+                    <!-- Repeat similar changes for other skill stories -->
+
                     <div class="story">
                         <img src="https://placekitten.com/100/100" alt="Skill Story 2">
                         <p>Node.js</p>
