@@ -216,13 +216,14 @@
         }
 
         .messages {
-            width: 70%;
+            width: 30%;
             margin-left: 10px;
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             padding: 20px;
             margin-top: 20px;
+            flex-shrink: 0; /* Prevent messages from shrinking */
         }
 
         .message-title {
@@ -293,7 +294,11 @@
     <div class="messages">
         <div class="message-title">Messages</div>
         <div class="message-content">
-            <p>Here are some messages for the user.</p>
+            <img src="https://placekitten.com/50/50" alt="User Profile Photo">
+            <div class="user-info">
+                <div class="user-name">John Doe</div>
+            </div>
+            <p>This is a demo message. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
     </div>
 
