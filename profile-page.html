@@ -651,13 +651,14 @@
             </div>
 
             <div class="friend-requests">
+                <div class="requests-title">Requests</div>
+
                 <div class="request-tabs">
                     <div class="request-tab" onclick="showTab('received-tab')">Request Received</div>
                     <div class="request-tab" onclick="showTab('sent-tab')">Request Sent</div>
                 </div>
             
                 <div id="received-tab" class="request-tab-content">
-                    <div class="requests-title">Received Requests</div>
                     <!-- Request Received Content -->
                     <div class="request">
                         <div class="request-info">
@@ -676,7 +677,6 @@
                 </div>
             
                 <div id="sent-tab" class="request-tab-content">
-                    <div class="requests-title">Sent Requests</div>
                     <!-- Request Sent Content -->
                     <div class="request">
                         <div class="request-info">
@@ -686,7 +686,7 @@
                                 <p>You sent a friend request.</p>
                             </div>
                         </div>
-                        <div class="request-status">Pending</div>
+                        <div class="request-status">Withdraw</div>
                     </div>
                     <!-- Add more sent requests as needed -->
                 </div>
