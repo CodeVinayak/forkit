@@ -373,15 +373,14 @@
             justify-content: flex-start;
             align-items: flex-start;
             margin-top: 20px;
-            }
-
-        .notifications-section .friend {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
         }
 
-        .notifications-section .friend img {
+        .notification-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .notification-info .profile-pic {
             width: 50px;
             height: 50px;
             border-radius: 50%;
@@ -522,9 +521,9 @@
             <div class="notifications-section">
                 <div class="notification">
                     <div class="notification-title">Notifications</div>
-                    <div>
-                        <img src="https://placekitten.com/55/55">
-                        <div class="notification-info">
+                    <div class="notification-info">
+                        <img class="profile-pic" src="https://placekitten.com/55/55">
+                        <div class="friend-info">
                             <b>
                                 <p>Vinayak Singh</p>
                             </b>
@@ -533,6 +532,9 @@
                     </div>
                 </div>
             </div>
+
+
         </div>
 </body>
+
 </html>
